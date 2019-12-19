@@ -1,0 +1,31 @@
+server:
+  port: 8800
+  servlet:
+    session:
+      cookie:
+        name: authority-certification
+spring:
+  datasource:
+    username: root
+    password: tjzc#123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.1.177:3306/basic_service?serverTimezone=GMT%2B8&characterEncoding=utf8&useUnicode=true&useSSL=false
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+  thymeleaf:
+    cache: true
+    encoding: UTF-8
+    prefix: classpath:/templates
+    suffix: .html
+myclient:
+  client: oauth
+  secret: oauth
+  refresh-time: 320400
+  jwt-key: tjzc#123
+  redirect-uris: ["http://localhost:8801/login","http://localhost:8802/login",
+                  "http://192.168.1.177:8801/login","http://192.168.1.177:8802/login",
+                  "http://localhost:3003/","http://localhost:3000/"]
+
+

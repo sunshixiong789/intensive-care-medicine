@@ -1,0 +1,8 @@
+logging:
+  level:
+    com.mskysoft.baseservice.dao: debug
+    com.mskysoft.baseservice.mapper: debug
+oauth-url: http://192.168.1.177:8800
+
+swagger2:
+  enable: true

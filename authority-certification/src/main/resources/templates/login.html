@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>统一登录入口</title>
+  <link href="/loginStyle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="container">
+  <div class="container-middle">
+    <h4>统一登录入口</h4>
+    <form role="form" data-th-action="@{/login}" method="post">
+      <div data-th-if="${param.error != null}" class="error-font">
+        用户名或密码错误！！！
+      </div>
+      <div data-th-if="${param.logout != null}">
+        登出成功！！！
+      </div>
+      <div dir="ltr" role="row" class="next-row"
+           style="position: relative; margin-bottom: 25px; flex-direction: column;">
+        <div dir="ltr" role="gridcell" class="next-col">
+          <i class="next-icon next-icon-account next-small"
+             style="position: absolute; left: -4px; top: 7px; color: rgb(153, 153, 153);"></i>
+          <span class="next-input next-large src--input--4Jhht4N">
+        <input placeholder="用户名" height="100%" name="username" type="text" autocomplete="off" value="">
+      </span>
+        </div>
+        <div dir="ltr" role="gridcell" class="next-col"></div>
+      </div>
+      <div dir="ltr" role="row" class="next-row"
+           style="position: relative; margin-bottom: 25px; flex-direction: column;">
+        <div dir="ltr" role="gridcell" class="next-col">
+          <i test="lock" class="next-icon next-icon-ellipsis next-small"
+             style="position: absolute; left: -4px; top: 7px; color: rgb(153, 153, 153);"></i>
+          <span class="next-input next-large src--input--4Jhht4N">
+        <input placeholder="密码" height="100%" name="password" type="password" autocomplete="off" value="">
+      </span>
+        </div>
+        <div dir="ltr" role="gridcell" class="next-col">
+        </div>
+      </div>
+      <input type="hidden"
+             name="${_csrf.parameterName}"
+             value="${_csrf.token}"/>
+      <div dir="ltr" role="row" class="next-row"
+           style="position: relative; margin-bottom: 25px; flex-direction: column;">
+        <div dir="ltr" role="gridcell" class="next-col" style="display: flex;justify-content: center">
+          <button type="submit" class="next-btn next-medium next-btn-primary"
+                  style="width: 240px; background: rgb(48, 128, 254); border-radius: 28px;">登 录
+          </button>
+        </div>
+        <div dir="ltr" role="gridcell" class="next-col">
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+</body>
+</html>

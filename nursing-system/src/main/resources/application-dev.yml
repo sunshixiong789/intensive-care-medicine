@@ -1,0 +1,10 @@
+logging:
+  level:
+    com.mskysoft.nursingsystem.dao: debug
+oauth-url: http://192.168.1.177:8800
+
+swagger2:
+  enable: true
+spring:
+  jpa:
+    show-sql: true

@@ -1,0 +1,9 @@
+# Created by .ignore support plugin (hsz.mobi)
+### SVN template
+.svn/
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr

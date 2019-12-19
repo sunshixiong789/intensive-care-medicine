@@ -1,0 +1,23 @@
+server:
+  port: 8802
+spring:
+  datasource:
+    username: root
+    password: tjzc#123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.1.177:3306/intensive_care_medicine?serverTimezone=GMT%2B8&characterEncoding=utf8&useUnicode=true&useSSL=false
+  profiles:
+    active: dev #开发环境
+  jpa:
+    hibernate:
+      ddl-auto: update
+security:
+  oauth2:
+    client:
+      clientId: oauth
+      clientSecret: oauth
+      accessTokenUri: ${oauth-url}/oauth/token
+      userAuthorizationUri: ${oauth-url}/oauth/authorize
+    resource:
+      userInfoUri: ${oauth-url}/user-info
+      token-info-uri: ${oauth-url}/oauth/check_token

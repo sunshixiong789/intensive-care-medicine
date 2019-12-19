@@ -1,0 +1,183 @@
+body {
+  background: url("background.png");
+  background-size: cover;
+  height: 100%;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+}
+.error-font{
+  color: red;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-middle {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 30px 40px;
+  display: flex;
+  color: #3080fe;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.next-input.next-large {
+  height: 40px;
+  border-radius: 3px;
+}
+
+.next-input, .next-input *, .next-input :after, .next-input :before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.next-input {
+  display: inline-table;
+  border-collapse: separate;
+  font-size: 0;
+  width: 200px;
+  border-spacing: 0;
+  -webkit-transition: all .1s linear;
+  transition: all .1s linear;
+  border: 1px solid #c4c6cf;
+  background-color: #fff;
+}
+
+.next-checkbox-label, .next-input {
+  vertical-align: middle;
+  line-height: 1;
+}
+
+.src--input--4Jhht4N {
+  width: 320px !important;
+  border-color: #ebedf2 !important;
+  border-top: 0 !important;
+  border-right: 0 !important;
+  border-left: 0 !important;
+  border-radius: 0 !important;
+}
+
+.next-input.next-large input {
+  border-radius: 3px;
+}
+
+.next-input.next-large input {
+  height: 38px;
+  padding: 0 12px;
+  font-size: 16px;
+}
+
+.next-input input, .next-input textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  vertical-align: middle;
+  background-color: transparent;
+  color: #333;
+}
+
+.next-icon {
+  display: inline-block;
+  font-family: NextIcon;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.next-icon.next-small:before {
+  width: 16px;
+  font-size: 16px;
+  line-height: inherit;
+}
+
+.next-row, .next-row *, .next-row :after, .next-row :before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.next-icon-account:before {
+  content: "\E608";
+}
+
+.next-icon:before {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.next-icon-ellipsis:before {
+  content: "\E654";
+}
+
+@font-face {
+  font-family: NextIcon;
+  src: url(//at.alicdn.com/t/font_515771_emcns5054x3whfr.eot);
+  src: url(//at.alicdn.com/t/font_515771_emcns5054x3whfr.eot#iefix) format("embedded-opentype"), url(//at.alicdn.com/t/font_515771_emcns5054x3whfr.woff) format("woff"), url(//at.alicdn.com/t/font_515771_emcns5054x3whfr.ttf) format("truetype"), url(//at.alicdn.com/t/font_515771_emcns5054x3whfr.svg#NextIcon) format("svg")
+}
+
+.next-btn {
+  position: relative;
+  display: inline-block;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  text-decoration: none;
+  text-align: center;
+  text-transform: none;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all .1s linear;
+  transition: all .1s linear;
+  cursor: pointer;
+}
+
+.next-btn.next-btn-primary {
+  border-style: solid;
+  background-color: #5584ff;
+  border-color: transparent;
+}
+
+.next-btn.next-btn-primary.active, .next-btn.next-btn-primary.hover, .next-btn.next-btn-primary:active, .next-btn.next-btn-primary:focus, .next-btn.next-btn-primary:hover {
+  color: #fff;
+  background-color: #3e71f7;
+  border-color: transparent;
+  text-decoration: none;
+}
+
+.next-btn.next-medium {
+  border-radius: 3px;
+  padding: 0 12px;
+  height: 28px;
+  line-height: 26px;
+  font-size: 12px;
+  border-width: 1px;
+}
+
+.next-btn, .next-btn:active, .next-btn:focus, .next-btn:hover {
+  outline: 0;
+}
+.next-row, .next-row *, .next-row :after, .next-row :before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.next-row, .next-row *, .next-row :after, .next-row :before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}

@@ -1,0 +1,10 @@
+version: '1.0.0'
+services:
+  authority-certification:
+    build: .
+    restart: always
+    container_name: authority-certification-container
+    ports:
+      - "8800:8800"
+    environment:
+      spring.profiles.active: dev

@@ -1,0 +1,10 @@
+version: '1.0.0'
+services:
+  basic-service:
+    build: .
+    restart: always
+    container_name: basic-service-container
+    ports:
+      - "8801:8801"
+    environment:
+      spring.profiles.active: dev
