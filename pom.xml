@@ -23,7 +23,7 @@
         <swagger2.version>3.0.0-SNAPSHOT</swagger2.version>
         <bootstrap.ui>1.9.6</bootstrap.ui>
         <spring-cloud.version>Greenwich.SR4</spring-cloud.version>
-        <guava>28.1-jre</guava>
+        <guava>29.0-jre</guava>
         <project.version>0.0.1-SNAPSHOT</project.version>
         <plus-annotation>3.2.0</plus-annotation>
     </properties>
